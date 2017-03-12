@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --watch test/**.js", 
+    "test": "mocha --watch test/**.js",
+    "start": "nodemon app.js",
     "grade": "mocha --reporter spec --timeout 300 test/*.js"
   },
   "author": "",

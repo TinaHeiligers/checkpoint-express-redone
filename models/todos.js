@@ -1,6 +1,6 @@
 'use strict';
 
-var tasks = {}; // a place to store tasks by person
+let tasks = {}; // a place to store tasks by person
 
 module.exports = {
   reset: () => {
@@ -28,8 +28,8 @@ module.exports = {
     tasks[name][index].complete = true;
   },
   remove: (name, index) => {
-    var firstTasks = tasks[name].slice(0,index);
-    var lastTasks = tasks[name].slice(index+1);
+    let firstTasks = tasks[name].slice(0,index);
+    let lastTasks = tasks[name].slice(index+1);
     return tasks[name] = firstTasks.concat(lastTasks)
   }
 };
