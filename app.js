@@ -11,3 +11,6 @@ app.use(bodyParser.json());
 app.use(router);
 
 if (!module.parent) app.listen(3000); // conditional prevents a very esoteric EADDRINUSE issue with mocha watch + supertest + npm test.
+
+// did not need any logging middleware (volleyball or morgan)
+// had to add in router, and some boilerplate for bodyParser.

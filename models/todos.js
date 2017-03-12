@@ -5,11 +5,7 @@ let tasks = {}; // a place to store tasks by person
 module.exports = {
   reset: () => {
     tasks = {}; // (this function is completed for you.)
-    //I want to use a data structure of the form:
-    //tasks = {
-    //  'zeke' : [{content: 'clean room'},{content: 'write mom'}],
-    //  'omri' : [{content: 'exercise'}]
-    //}
+
   },
   // ==== COMPLETE THE FOLLOWING (SEE `model.js` TEST SPEC) =====
   listPeople: () => {
@@ -33,3 +29,10 @@ module.exports = {
     return tasks[name] = firstTasks.concat(lastTasks)
   }
 };
+
+//I used a data structure of the form:
+//tasks = {
+//  'zeke' : [{content: 'clean room'},{content: 'write mom'}],
+//  'omri' : [{content: 'exercise'}]
+//}
+// this is to take care of multiple tasks for a single user.
